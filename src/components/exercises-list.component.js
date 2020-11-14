@@ -5,7 +5,6 @@ import axios from "axios";
 import Exercise from "./Exercise";
 const Exercises = () => {
   const [exercises, setExercises] = useState([]);
-  console.log("2", exercises[0]);
 
   useEffect(() => {
     axios

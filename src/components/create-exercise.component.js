@@ -46,7 +46,10 @@ const CreateExercise = () => {
     console.log("exercise", exercise);
     axios
       .post("http://localhost:5000/exercises/add", exercise)
-      .then((res) => console.log(res.data));
+      .then((res) => console.log(res.data))
+      .catch((err) => {
+        console.log("Error " + err);
+      });
 
     history.push("/");
   };
